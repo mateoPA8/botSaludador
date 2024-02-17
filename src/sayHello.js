@@ -7,29 +7,28 @@ function VerDatosDeLaPersona(a,b,c)
      }
      if(b>=30 && c=="femenino")
      {
-        resultado= "Sra " + a;
+        resultado= "Miss " + a;
      }
      else
      {
-        resultado= "joven "+a;
+        resultado= "student "+a;
      }
      return resultado;
   }
 
-function saludar(a,b,c,d,e) {
+function sayHello(a,b,c,d,e) {
     if(d>="06:00:00" && d<"12:00:00")
     {
-        return "buenos dias " + VerDatosDeLaPersona(a,b,c);
+        return "good morning " + VerDatosDeLaPersona(a,b,c);
     }
     else if(d>="12:00:00" && d<"18:00:00")
     {
-        return "buenos tardes " + VerDatosDeLaPersona(a,b,c);
+        return "good afternoon " + VerDatosDeLaPersona(a,b,c);
     }
     else
     {
-        return "buenos noches" + VerDatosDeLaPersona(a,b,c);
+        return "good night " + VerDatosDeLaPersona(a,b,c);
     }
   }
   
-  export default saludar;
-  
+  export default sayHello;
