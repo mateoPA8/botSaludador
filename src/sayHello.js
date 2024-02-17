@@ -1,33 +1,33 @@
-function VerDatosDeLaPersona(a,b,c)
+function VerDatosDeLaPersona(nombre,edad,genero)
   {
     var resultado;
-    if(b>=30 && c=="masculino" )
+    if(edad>=30 && genero=="masculino" )
      {
-         resultado="Sr " + a;
+         resultado="Sr " + nombre;
      }
-     if(b>=30 && c=="femenino")
+     else if(edad>=30 && genero=="femenino")
      {
-        resultado= "Miss " + a;
+        resultado= "Miss " + nombre;
      }
      else
      {
-        resultado= "student "+a;
+        resultado= "student "+ nombre;
      }
      return resultado;
   }
 
-function sayHello(a,b,c,d,e) {
-    if(d>="06:00:00" && d<"12:00:00")
+  function sayHello(nombre,edad,genero,hora) {
+    if(hora>="06:00:00" && hora<"12:00:00")
     {
-        return "good morning " + VerDatosDeLaPersona(a,b,c);
+        return "good morning " + VerDatosDeLaPersona(nombre,edad,genero);
     }
-    else if(d>="12:00:00" && d<"18:00:00")
+    else if(hora>="12:00:00" && hora<"18:00:00")
     {
-        return "good afternoon " + VerDatosDeLaPersona(a,b,c);
+        return "good afternoon " + VerDatosDeLaPersona(nombre,edad,genero);
     }
     else
     {
-        return "good night " + VerDatosDeLaPersona(a,b,c);
+        return "good night " + VerDatosDeLaPersona(nombre,edad,genero);
     }
   }
   

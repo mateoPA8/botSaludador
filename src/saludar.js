@@ -1,33 +1,33 @@
-function VerDatosDeLaPersona(a,b,c)
+function VerDatosDeLaPersona(nombre,edad,genero)
   {
     var resultado;
-    if(b>=30 && c=="masculino" )
+    if(edad>=30 && genero=="masculino")
      {
-         resultado="Sr " + a;
+         resultado="Sr " + nombre;
      }
-     if(b>=30 && c=="femenino")
+    else if(edad>=30 && genero=="femenino")
      {
-        resultado= "Sra " + a;
+        resultado= "Sra " + nombre;
      }
      else
      {
-        resultado= "joven "+a;
+        resultado= "joven "+nombre;
      }
      return resultado;
   }
 
-function saludar(a,b,c,d,e) {
-    if(d>="06:00:00" && d<"12:00:00")
+function saludar(nombre,edad,genero,hora) {
+    if(hora>="06:00:00" && hora<"12:00:00")
     {
-        return "buenos dias " + VerDatosDeLaPersona(a,b,c);
+        return "buenos dias " + VerDatosDeLaPersona(nombre,edad,genero);
     }
-    else if(d>="12:00:00" && d<"18:00:00")
+    else if(hora>="12:00:00" && hora<"18:00:00")
     {
-        return "buenos tardes " + VerDatosDeLaPersona(a,b,c);
+        return "buenos tardes " + VerDatosDeLaPersona(nombre,edad,genero);
     }
     else
     {
-        return "buenos noches" + VerDatosDeLaPersona(a,b,c);
+        return "buenos noches" + VerDatosDeLaPersona(nombre,edad,genero);
     }
   }
   

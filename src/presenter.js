@@ -21,10 +21,10 @@ form.addEventListener("submit", (event) => {
   var horaCochabamba = fechaHoraActual.toLocaleTimeString('es-BO', opciones);
   if(idioma=="ingles")
   {
-    div.innerHTML = "<p> Hello, " +  sayHello(nombre,edad,genero,horaCochabamba,idioma)+"</p>";
+    div.innerHTML = "<p> Hello, " +  sayHello(nombre,edad,genero,horaCochabamba)+"</p>";
   }
   else{
-    div.innerHTML = "<p> Hola, " +  saludar(nombre,edad,genero,horaCochabamba,idioma)+"</p>";
+    div.innerHTML = "<p> Hola, " +  saludar(nombre,edad,genero,horaCochabamba)+"</p>";
   }
  
 });
