@@ -14,5 +14,9 @@ form.addEventListener("submit", (event) => {
   const nombre = nombre_input.value;
   const edad=edad_input.value;
   const genero=genero_input.value;
-  div.innerHTML = "<p> Hola " +  saludar(nombre,edad,genero)+"</p>";
+  var fechaHoraActual = new Date();
+  var opciones = { timeZone: 'America/La_Paz' }; 
+  var horaCochabamba = fechaHoraActual.toLocaleTimeString('es-BO', opciones);
+
+  div.innerHTML = "<p> Hola " +  saludar(nombre,edad,genero,horaCochabamba)+"</p>";
 });
